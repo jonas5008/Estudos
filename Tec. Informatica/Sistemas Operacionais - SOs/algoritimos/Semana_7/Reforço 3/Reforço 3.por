@@ -7,21 +7,19 @@ logico resultado
 
   funcao inicio() {
 
-   condicao1 <- verdadeiro
-   condicao2 <- falso
-   condicao3 <- verdadeiro
+  //Entrada
+  condicao1 = verdadeiro
+  condicao2 = falso
+  condicao3 = verdadeiro
+  //Atribuições
 
-resultado <- (condicao1 e condicao2) ou (nao condicao2 e condicao3)
+  //Processamento
+  resultado = (condicao1 e condicao2) ou (nao condicao2 e condicao3)
+  //Calculo da expressão lógica
 
+  //Saida
+  escreva("Resultado da expressão: ", resultado)
+  //Mostra do resultado
 
-escreva("Resultado da expressão: ", resultado)
-
-
-
-
-
-
-
-    
   }
 }

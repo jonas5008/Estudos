@@ -17,7 +17,7 @@ logico multiplo
     //Pergunta o segundo número
 
     //processamento
-    multiplo <- num1 % num2
+    multiplo = (num1 % num2 == 0)
     //Verifica se o primeiro é múltiplo do segundo
 
     //saida

@@ -17,19 +17,19 @@ logico barato, igual
     //Pergunta o preço do produto B
 
     //processamento
-    barato <- produto1 < produto2
+    barato = produto1 < produto2
     //Verifica se o primeiro é mais barato que o segundo
 
     //processamento
-    igual <- produto1 = produto2
+    igual = (produto1 == produto2)
     //Verifica se os preços são iguais
 
     //saida
-    escreva("Produto A é mais barato que B? ", barato,"")
+    escreva("Produto A é mais barato que B? ", barato,"\n")
     //Mostra o resulto
   
     //saida
-    escreva("Os preços são iguais? ", igual,"")
+    escreva("Os preços são iguais? ", igual,"\n")
     //Mostra o resulto
   
     
