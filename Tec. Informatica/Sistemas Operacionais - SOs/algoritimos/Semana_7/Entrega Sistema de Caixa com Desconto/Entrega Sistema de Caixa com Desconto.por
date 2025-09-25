@@ -12,36 +12,60 @@ programa {
 
   funcao inicio() {
 
+  //entrada
   escreva("--- Sistema de Caixa da Loja ---\n")
+  //Aparece Sistema de Caixa da Loja
 
-  escreva("Nome do Cliente: \n")
+  //entrada
+  escreva("Nome do Cliente: ")
   leia(nome_cliente)
+  //Pergunta o nome do cliente
 
-  escreva("Valor total dos produtos: \n")
+  //entrada
+  escreva("Valor total dos produtos: R$ ")
   leia(valor_total_produtos)
+  //Pergunta o valor total dos produtos
 
-  escreva("Forma de pagamento (PIX ou Cartão): \n")
+  //entrada
+  escreva("Forma de pagamento (PIX ou Cartão): ")
   leia(forma_pagamento)
+  //Pergunta a forma de pagamento
 
+  //processamento
+  desconto = valor_total_produtos * PERCENTUAL_DESCONTO
+  //Cálculo do desconto e valor final
 
-  desconto <- valor_total_produtos * PERCENTUAL_DESCONTO
+  //processamento
+  valor_final_compra = valor_total_produtos - desconto
+  //Cálculo do desconto e valor final
 
-  valor_final_compra <- valor_total_produtos - desconto
+  //processamento
+  ganhou_brinde = (valor_final_compra > 100.0 e forma_pagamento == "PIX")
+  //Cálculo do desconto e valor final
 
-
-  ganhou_brinde <- (valor_final_compra > 100.0 e forma_pagamento == "PIX")
-
+  //saida
   escreva("--- Recibo para Ana Souza ---\n")
+  //Mostra o Recibo da Ana Souza
 
-  escreva("Valor dos Produtos:", nome_cliente,"\n")
+  //saida
+  escreva("Valor dos Produtos: R$ ", valor_total_produtos,"\n")
+  //Mostra o valor dos Produtos
 
-  escreva("Desconto (10%):\n", desconto,"")
+  //saida
+  escreva("Desconto (10%): ", desconto,"\n")
+  //Mostra o desconto
 
-  escreva("Valor Final da Compra:", valor_final_compra,"\n")
+  //saida
+  escreva("Valor Final da Compra: R$ ", valor_final_compra,"\n")
+  //Mostra o valor final da compra
 
-  escreva("Forma de Pagamento:", forma_pagamento,"\n")
+  //saida
+  escreva("Forma de Pagamento: ", forma_pagamento,"\n")
+  //Mostra a forma de pagamento
 
-  escreva("Cliente ganhou brinde especial?", ganhou_brinde,"\n")
+  //saida
+  escreva("Cliente ganhou brinde especial? ", ganhou_brinde,"\n")
+  //Ele fala verdadeiro se clinte ganhou o brinde
 
 
 
