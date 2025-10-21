@@ -3,8 +3,7 @@ import time
 #print (pyautogui.position())
 
 #Rodar infinitamente
-#while(True):
-#print(pyautogui.position())#rodar infinitamente
+Maluise3012##print(pyautogui.position())#rodar infinitamente
 pyautogui.PAUSE = 0.3
 # mover o mouse para diferentes direcoes.
 
