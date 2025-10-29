@@ -6,23 +6,36 @@
     <title>form006</title>
 </head>
 <body>
-    
+            
     <h1>Formulário de Preferências</h1>
 
-<form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get">
 
-<fieldset>
-<div>
-    <legend>Preferências</legend>
-    <label for="idcor">Cor:</label>
-    <input type="color" name="cor" id="idcor">
-</div>
-</fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+            <div>
+                <label for="idcor">Cor:</label>
+                <input type="color" name="cor" id="idcor">
+            </div>
+            <div>
+                <label for="idrange">Range</label>
+                <input type="range" name="range" id="igrange" min="1" max="5">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Envio de Arquivo</legend>
+            <div>
+                <label for="idfile">Enviar Arquivo</label>
+                <input type="file" name="file" id="idfile">
+            </div>
+        </fieldset>
 
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
 
+    </form>
 
+        <p><a href="ex012.html" rel="prev"><button>Voltar</button></a></p>
 
-
-</form>
 </body>
 </html>
