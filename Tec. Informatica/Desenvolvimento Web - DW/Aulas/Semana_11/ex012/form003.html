@@ -9,8 +9,28 @@
 <body>
    
        <h1>Teste de Formulário </h1>
-
        <form action="Cadastro.php" method="GET">
+
+       <div>
+              <label for="idnome">Nome</label>
+              <input type="text" name="nome" id="idnome" required maxlength="30" autocomplete="nome" placeholder="Nome completo" >
+       </div>
+
+       <div>
+              <label for="idmedia">Media</label>
+              <input type="number" name="Media" id="idmedia" placeholder="numeros" min="0" max="25" step="0.5" >
+       </div>
+
+       <div>
+              <label for="idbimestre">Bimestre</label>
+              <input type="month" name="bimestre" id="idbimestre" value="2007-12" >
+       </div>
+
+       <div>
+              <label for="iddia">Dia da prova</label>
+              <input type="date" name="dia" id="iddia" value="2007-12-13">
+       </div>
+
               <input type="submit" value="Enviar">
               <input type="reset" value="Limpar">
 
