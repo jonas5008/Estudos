@@ -1,23 +1,26 @@
 <?php
 
-$saldo_inicial = 1000;
+$saldo = 1000;
 
+
+echo "****************************************\n";
 echo "Titular: Jonas Mendes\n";
-echo "Saldo inicial = R$$saldo_inicial\n";
+echo "Saldo inicial = R$$saldo\n";
 do {
+echo "****************************************\n";
 
-echo "Consultar Saldo\n";
-echo "Sacar\n";
-echo "Depositar\n";
-echo "Sair\n";
+echo "1 - Consultar Saldo\n";
+echo "2 - Sacar\n";
+echo "3 - Depositar\n";
+echo "4 - Sair\n";
 
 $opcao = (float) fgets (STDIN);
 
 switch ($opcao) {
-    case 1;
+    case 1:
         echo "O seu saldo disponivel é $saldo!\n";
         break;
-    case 2;
+    case 2:
         echo "Qual valor desejar sacar?\n";
         $saque = (float) fgets (STDIN);
 
@@ -31,7 +34,7 @@ switch ($opcao) {
         }
 
         break;
-    case 3;
+    case 3:
         echo "Qual valor deseja depositar?\n";
         $deposito = (float) fgets (STDIN);
 
@@ -44,7 +47,7 @@ switch ($opcao) {
         echo $saldo;
         }
         break;
-    case 4;
+    case 4:
         echo "Sair\n";
         break;
     default:
