@@ -1,5 +1,7 @@
 <?php
 
+  require __DIR__ . '/funcoes.php';
+
   $nomeFilme = "Top Gun - Maverick"; //String
   //$nomeFilme = "Thor: Ragnarok";
   //$nomeFilme = "Se beber não case";
@@ -48,9 +50,10 @@
 
   //$notaFilme = $somadenotas / 5; //Float
 
-  $qtdNotas = ($argc-1);
+  $qtdNotas = ($argc-1) == 0 ? '1': ($argc-1);
 
   //$notaFilme = $somadeNotas / $qtdNotas;
+  
 
   $notaFilme = array_sum($notas) / $qtdNotas;
 
@@ -104,3 +107,20 @@
 
  var_dump ($notas);
  echo $argc;
+
+ exibeAnoLancamento ($anoLançamento);
+
+ echo "Genero do Filme: $genero\n";
+
+$filme =
+
+criaFilme(
+  anoLançamento: 2021, 
+  nota: 7.1,
+  nome: 'Thor: Ragnarok',
+  genero: 'Super Herói');
+
+
+$filmeComoStringJson = json_encode($filme);
+
+file_put_contents(__DIR__. '/filme.json',$filmeComoStringJson);
