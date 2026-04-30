@@ -1,31 +1,33 @@
 <?php
 
-require __DIR__ . "/src/modelo/Filme.php";
-require __DIR__ . "/src/modelo/Genero.php"; //Ele interliga com outro arquivo
+require __DIR__ . "/src/Model/Titulo.php";
+require __DIR__ . "/src/Model/Genero.php";
+require __DIR__ . "/src/Model/Serie.php";
+require __DIR__ . "/src/Model/Filme.php";
 
 
-echo "Bem vindo ao Screen math\n"; //Mostra o texto
 
-//Ele cria um objeto
-$filme1 = new filme(
+echo "Bem-vindo ao Screen Match\n";
+
+$filme1 = new Filme(
     'Thor Ragnarok',
     2021,
-    Genero::SuperHeroi
+    Genero::SuperHeroi,
+    180
 );
 
-$filme2 = new filme(
-    'Top Gun Maverick',
+$serie1 = new Serie(
+    'The Boys',
     2018,
-    Genero::Ação
+    Genero::Acao,
+    5,
+    11,
+    60
 );
 
-$filme1->avalia(10);//O usuario da a nota 10 para o filme1
-$filme2->avalia(6);
-$filme1->avalia(8);
+$serie1->avaliar(10);
+$serie1->avaliar(8);
 
-var_dump($filme1); //(Ele mostra o resultado no terminal)
-echo $filme1->media();
-
-//var_dump($filme2);
-
+var_dump($serie1);
+echo $serie1->media();
 

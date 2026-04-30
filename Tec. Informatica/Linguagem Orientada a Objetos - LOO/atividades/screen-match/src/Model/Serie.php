@@ -1,0 +1,24 @@
+<?php
+
+//Criando uma classe chamada serie.
+class Serie extends Titulo
+{
+
+    public function __construct(
+        string $nome,
+        int $anoLancamento,
+        Genero $genero,
+        public readonly int $temporadas,
+        public readonly int $qtdepisodiosPorTemporadas,
+        public readonly int $duracaoPorEpisodio
+    ) {
+        parent::__construct ($nome, $anoLancamento, $genero);
+    }
+
+    public function duracaoEmMinutos():int 
+    {
+        return $this->temporadas * $this->qtdepisodiosPorTemporadas * $this->duracaoPorEpisodio;
+    }
+        
+    
+}
