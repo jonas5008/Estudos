@@ -26,12 +26,12 @@ function ex2() {
 
 function ex3() {
     $nome = readline("Nome do Funcionário: ");
-    $salario = floatval(readline("Salário: "));
+    $salario = floatval(readline("Salário: ")); //numeros decimais
     echo "O funcionário $nome, tem um salário de $salario, em Junho. \n";
 }
 
 function ex4() {
-    $valor1 = intval(readline("Digite um valor: "));
+    $valor1 = intval(readline("Digite um valor: "));//numeros inteiros
     $valor2 = intval(readline("Digite outro valor: "));
     $soma = $valor1 + $valor2;
     echo "A soma entre $valor1, e $valor2, é igual a $soma,. \n";
