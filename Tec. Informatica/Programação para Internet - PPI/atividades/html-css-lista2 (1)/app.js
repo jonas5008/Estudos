@@ -110,18 +110,71 @@ function ex0015() { areaPerimetro()
 
 }
 
-function ex0016() { areaPerimetro()
-  let area = parseFloat(document.getElementById("inputNumberex15").value);
-  let perimetro = parseFloat(document.getElementById("inputNumberex15").value);
-  let raio = area * 3.14
-  let resultado = document.getElementById("resultado");
-  resultado.textContent = raio
-  
+function ex16() {
+  let raio = parseFloat(document.getElementById("input-1-Ex16").value);
+  let pi = 3.14;
+  let area = document.getElementById("resultado161");
+  let perimetro = document.getElementById("resultado162");
+  let calculo1 = pi * (raio * raio);
+  let calculo2 = (pi * raio) * 2;
+  area.textContent = calculo1;
+  perimetro.textContent = calculo2;
 }
 
+function ex17() {
+  let numero = parseFloat(document.getElementById("inputNumber1ex17").value);
+  let resultado = "";
+  for (let i = 1; i <= 10; i++) {
+
+    resultado += "Adição: "
+      + numero + " + " + i + " = " + (numero + i) + "\n";
+
+    resultado += "Subtração: "
+      + numero + " - " + i + " = " + (numero - i) + "\n";
+
+    resultado += "Multiplicação: "
+      + numero + " x " + i + " = " + (numero * i) + "\n";
+
+    resultado += "Divisão: "
+      + numero + " / " + i + " = " + (numero / i).toFixed(2) + "\n\n";
+  };
+
+  let campoResultado = document.getElementById("resultado17")
+  campoResultado.textContent = resultado;
+}
+
+function ex18() {
+  let listaGenerica = [];
+  console.log(listaGenerica)
+}
+
+//19
+let linguagemDeProgramacao = ["JavaScript","C","C++","Kotlin","Python"]
+
+let campoLista = document.getElementById("resultado20");
+  campoLista.textContent = linguagemDeProgramacao;
 
 
 
 
+function ex20(){
+  let elemento1 = document.getElementById("input1ex20").value
+  linguagemDeProgramacao.push(elemento1);
+  let campoLista = document.getElementById("resultado20");
+  campoLista.textContent = linguagemDeProgramacao;
+}
+    
+let lista = ["Julio","Mary","Rian"]
 
+function ex21(){
+  console.log(lista[0])
+}
 
+function ex22(){
+  console. log(lista[1])
+}
+
+function ex23(){
+  console. log(lista[2])
+
+}
